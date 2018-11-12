@@ -42,9 +42,11 @@
     {
       "name": "vlc",
       "rm-configure": true,
+      "build-options": {
+        "append-pkg-config-path": "/app/share/vlc/extra/fdkaac/lib/pkgconfig"
+      },
       "config-opts": [
         "BUILDCC=/usr/bin/gcc -std=gnu99",
-        "PKG_CONFIG_PATH=/app/share/vlc/extra/fdkaac/lib/pkgconfig",
         "--disable-a52",
         "--disable-lua",
         "--enable-fdkaac",
