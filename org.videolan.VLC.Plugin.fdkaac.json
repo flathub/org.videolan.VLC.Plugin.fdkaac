@@ -16,9 +16,6 @@
     {
       "name": "vlc",
       "rm-configure": true,
-      "build-options": {
-        "append-pkg-config-path": "/app/share/vlc/extra/fdkaac/lib/pkgconfig"
-      },
       "config-opts": [
         "BUILDCC=/usr/bin/gcc -std=gnu99",
         "--disable-a52",
