@@ -24,8 +24,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/mstorsjo/fdk-aac/archive/v0.1.6.tar.gz",
-          "sha256": "adbcd793e406e1b88b3c1c41382d49f8c27371485b823c0fdab69c9124fd2ce3"
+          "url": "https://github.com/mstorsjo/fdk-aac/archive/v2.0.0.tar.gz",
+          "sha256": "6e6c7921713788e31df655911e1d42620b057180b00bf16874f5d630e1d5b9a2"
         },
         {
           "type": "script",
@@ -58,12 +58,16 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.videolan.org/pub/videolan/vlc/3.0.5/vlc-3.0.5.tar.xz",
-          "sha256": "f5c087dfebd4827052bf3b97996b3a05c79ae336dcb60a9e8d1a010f270072db"
+          "url": "https://download.videolan.org/pub/videolan/vlc/3.0.8/vlc-3.0.8.tar.xz",
+          "sha256": "e0149ef4a20a19b9ecd87309c2d27787ee3f47dfd47c6639644bc1f6fd95bdf6"
         },
         {
           "type": "file",
           "path": "org.videolan.VLC.Plugin.fdkaac.appdata.xml"
+        },
+        {
+          "type": "patch",
+          "path": "fdk-aac2.patch"
         }
       ]
     }
