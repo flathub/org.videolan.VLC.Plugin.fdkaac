@@ -2,8 +2,8 @@
   "id": "org.videolan.VLC.Plugin.fdkaac",
   "runtime": "org.videolan.VLC",
   "runtime-version": "stable",
-  "branch": "3-22.08",
-  "sdk": "org.freedesktop.Sdk//22.08",
+  "branch": "3-23.08",
+  "sdk": "org.freedesktop.Sdk//23.08",
   "build-extension": true,
   "separate-locales": false,
   "appstream-compose": false,
@@ -58,8 +58,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.videolan.org/pub/videolan/vlc/3.0.18/vlc-3.0.18.tar.xz",
-          "sha256": "57094439c365d8aa8b9b41fa3080cc0eef2befe6025bb5cef722accc625aedec"
+          "url": "https://download.videolan.org/pub/videolan/vlc/3.0.19/vlc-3.0.19.tar.xz",
+          "sha256": "643e3294bafe922324663ca499515b7564f2794575fd7d2b7992d20896381745"
         },
         {
           "type": "file",
