@@ -5,8 +5,6 @@
   "branch": "3-24.08",
   "sdk": "org.freedesktop.Sdk//24.08",
   "build-extension": true,
-  "separate-locales": false,
-  "appstream-compose": false,
   "build-options": {
     "env": {
       "V": "1"
@@ -46,14 +44,15 @@
         "BUILDCC=/usr/bin/gcc -std=gnu99",
         "--disable-a52",
         "--disable-lua",
+        "--disable-chromecast",
+        "--disable-spatialaudio",
         "--enable-fdkaac",
         "--prefix=/var/tmp/install"
       ],
       "post-install": [
         "mkdir -p /app/share/vlc/extra/fdkaac/plugins",
         "mv /var/tmp/install/lib/vlc/plugins/codec/libfdkaac_plugin.so /app/share/vlc/extra/fdkaac/plugins",
-        "install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo org.videolan.VLC.Plugin.fdkaac.appdata.xml",
-        "appstream-compose --basename=org.videolan.VLC.Plugin.fdkaac --prefix=${FLATPAK_DEST} --origin=flatpak org.videolan.VLC.Plugin.fdkaac"
+        "install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo org.videolan.VLC.Plugin.fdkaac.metainfo.xml"
       ],
       "sources": [
         {
@@ -63,7 +62,7 @@
         },
         {
           "type": "file",
-          "path": "org.videolan.VLC.Plugin.fdkaac.appdata.xml"
+          "path": "org.videolan.VLC.Plugin.fdkaac.metainfo.xml"
         },
         {
           "type": "patch",
