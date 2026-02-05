@@ -2,8 +2,8 @@
   "id": "org.videolan.VLC.Plugin.fdkaac",
   "runtime": "org.videolan.VLC",
   "runtime-version": "stable",
-  "branch": "3-24.08",
-  "sdk": "org.freedesktop.Sdk//24.08",
+  "branch": "3-25.08",
+  "sdk": "org.freedesktop.Sdk//25.08",
   "build-extension": true,
   "build-options": {
     "env": {
@@ -41,7 +41,7 @@
         "append-pkg-config-path": "/app/share/vlc/extra/fdkaac/lib/pkgconfig"
       },
       "config-opts": [
-        "BUILDCC=/usr/bin/gcc -std=gnu99",
+        "BUILDCC=/usr/bin/gcc",
         "--disable-a52",
         "--disable-lua",
         "--disable-chromecast",
@@ -57,8 +57,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.videolan.org/pub/videolan/vlc/3.0.21/vlc-3.0.21.tar.xz",
-          "sha256": "24dbbe1d7dfaeea0994d5def0bbde200177347136dbfe573f5b6a4cee25afbb0"
+          "url": "https://download.videolan.org/pub/videolan/vlc/3.0.23/vlc-3.0.23.tar.xz",
+          "sha256": "e891cae6aa3ccda69bf94173d5105cbc55c7a7d9b1d21b9b21666e69eff3e7e0"
         },
         {
           "type": "file",
